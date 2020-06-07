@@ -7,8 +7,7 @@ The Seabios boot time has been reduced to 1 sec only, applying $ ./build/cbfstoo
 
 the amazing bootsplash has been downloaed from a reddit post however I am unable t find the original post. Feel frree to change it. 
 
-if you already have coreboot installed, you can fash it internally:
-# flashrom -p internal:laptop=force_I_want_a_brick --image bios -w m4rc0linux220coreboot.rom
+if you already have coreboot installed, you can fash it internally.
 
 It is intended to be used on the "normal" thinkpad x220. It won't work on different models like x220i or x220t 
 
