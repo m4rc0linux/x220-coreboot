@@ -5,7 +5,7 @@ the m4rc0linux220coreboot.rom is meant to be flashed externally and it is just a
 
 The Seabios boot time has been reduced to 1 sec only, applying $ ./build/cbfstool build/coreboot.rom add-int -i 1000 -n etc/boot-menu-wait as described in the official guide: https://www.coreboot.org/SeaBIOS
 
-the amazing bootsplash has been downloaed from a reddit post however I am unable t find the original post. Feel frree to change it. 
+The amazing bootsplash has been originally downloaded from this post https://www.reddit.com/r/thinkpad/comments/ggomje/another_finished_project_t420_coreboot_with/  
 
 if you already have coreboot installed, you can fash it internally.
 
