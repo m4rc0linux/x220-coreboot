@@ -1,14 +1,16 @@
 # x220-coreboot
 
-My last coreboot built for the thinkpad x220, seabios including vga bootsplash, secondary payloads, boot menu wait set to 1 sec, and me_cleaner
+My last coreboot built for the thinkpad x220, seabios including vga bootsplash, secondary payloads, boot menu wait set to 1 sec, and me_cleaner.
+
+Ram frequency has been fixed. it works well with ddr3 1600 setting correctly the speed on 800mhz x 2 channels. In previous version and the oem bios it is limited to 667 mhz.
 
 the m4rc0linux220coreboot.rom is meant to be flashed externally and it is just a starting point for you own builds. Have a look to the .config file, which you can use and modify (if you wish to build your own is hightly recommended to change the vga options othewise no image will appear or eventually the the device won't boot at all.
 
-The Seabios boot time has been reduced to 1 sec only, applying $ ./build/cbfstool build/coreboot.rom add-int -i 1000 -n etc/boot-menu-wait as described in the official guide: https://www.coreboot.org/SeaBIOS
+The Seabios wait time has been reduced to 1 sec only, applying  ./build/cbfstool build/coreboot.rom add-int -i 1000 -n etc/boot-menu-wait as described in the official guide: https://www.coreboot.org/SeaBIOS
 
 The amazing bootsplash has been originally downloaded from this post https://www.reddit.com/r/thinkpad/comments/ggomje/another_finished_project_t420_coreboot_with/  
 
-if you already have coreboot installed, you can fash it internally.
+if you already have coreboot installed, you can fash it internally with sudo flashrom -p internal:laptop=force_I_want_a_brick -c MX25L6405 -w m4rc0linux220coreboot.rom -V
 
 It is intended to be used on the "normal" thinkpad x220. It won't work on different models like x220i or x220t 
 
