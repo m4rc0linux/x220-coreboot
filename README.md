@@ -1,6 +1,20 @@
 # x220-coreboot
 
-My last coreboot built for the thinkpad x220 with 2 different configurations:
+coreboot V 4.13 rom for thinkpad x220 featuring seabios v. 1.14.0 https://seabios.org/Releases#SeaBIOS_1.14.0
+
+commit 5c186c6777c9438ff4681929c9c25c98dee28bef
+
+Secondary payloads added https://www.coreboot.org/Payloads
+
+Nvramcui
+
+Coreinfo: https://www.coreboot.org/Coreinfo
+
+Nemtest: https://www.coreboot.org/Memtest86
+
+Tint: https://www.coreboot.org/Tint
+
+My last coreboot built for the thinkpad x220 comes with 2 different configurations:
 
 1) m4rc0linux220coreboot.rom - featuring vga bootsplash and support to intel wifi cards and bluetooth
 2) x220m4rc0.rom - featuring lbgfxinit set to 1024x768 (bootsplash1 included), no support to intel wifi and bluetooth - this is my last, and more free, built.
